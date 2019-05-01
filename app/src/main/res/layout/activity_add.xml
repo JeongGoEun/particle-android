@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a502.smarthome.AddActivity"
+    android:background="#e4e4e4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="◁"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:background="#00ff0000"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:onClick="onClickBack"/>
+        <TextView
+            android:text="Create a custom room"
+            android:background="#46547f"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <Button
+            android:text="v"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:background="#00ff0000"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:onClick="onClickOK"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/editText"
+            android:hint="room name"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="X"
+            android:textSize="20dp"
+            android:onClick="onClickClear"
+            android:background="#00ff0000"
+            android:layout_alignRight="@+id/editText"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/addList0"
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>
